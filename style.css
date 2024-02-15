@@ -1,0 +1,195 @@
+* {
+margin: 0;
+padding: 0;    
+scroll-behavior: smooth;
+}
+
+
+body {
+display:flex;
+font-family: "Poppins", sans-serif;
+background-color: #1F252E;
+color: #ffff;
+}
+
+.content {
+padding: 0 8.4rem;
+}
+
+.profile {
+padding-top: 10%;
+}
+
+.profile img {
+border-style:solid;
+border-color: #00fffc;
+border-radius: 100%;
+float: left;
+margin-top: 140px; 
+margin-right: 90px; 
+margin-left: 220px; 
+margin-bottom: 15px;
+}
+
+
+.presentation {
+padding: 150px 0 0 150px;
+text-align: justify;
+}
+
+.presentation h3 {
+margin-bottom: 1rem;
+}
+
+.btn {
+background-color: transparent;
+color:#00fffc;
+border: 2px solid #00fffc;
+padding: 0.8rem 1rem;
+font-size: 15px;
+border-radius: 7px;
+margin-top: 1rem;
+cursor: pointer;
+}
+
+.btn:hover {
+background-color: #0b0b0b;
+color: #00fffc;
+transition: 0.5s;
+}
+
+.presentation p {
+font-size: 13px;
+font-weight: 500;
+margin-top: 0.5rem;
+}
+
+.links li a{
+text-decoration: none;
+color:#00fffc;
+padding: 20px;
+}
+
+.links nav ul li {
+display: inline-block;
+margin-top: 1rem;
+margin-left: 60px;    
+}
+
+.btn-menu{
+background-color: transparent;
+color:#00fffc;
+border: 2px solid #00fffc;
+border-radius: 7px;
+cursor: pointer;
+padding: 4px;
+font-size: 14px;
+}
+
+.btn-menu:hover {
+background-color:#0b0b0b;
+transition: 0.5s; 
+}
+
+#social-links {
+font-size: 24px;
+margin-right: 400px;
+margin-left: 280px; 
+}
+
+#social-links a{
+text-decoration: none;
+}
+
+#social-links img{
+width: 30px;  
+}
+
+#social-links img:hover{
+transform: scale(1.3);
+}
+
+
+/* Animação ao Ola, nome e resumo */
+.presentation  h3:nth-child(1){
+color: transparent;
+animation: written_text .5s ease forwards;
+animation-delay: 1s;
+}
+
+.presentation  h1:nth-child(2){
+color: transparent;
+animation: written_text_name .5s ease forwards;
+animation-delay: 2.5s;
+}
+
+.presentation  p:nth-child(3){
+color: transparent;
+animation: written_text .5s ease forwards;
+animation-delay: 3.5s;
+}
+
+@keyframes written_text {
+  100% {
+    color: #ffff;
+  }
+}
+
+@keyframes written_text_name {
+  100% {
+    color: #00fffc;
+  }
+}
+
+
+/* squares */
+body {
+  overflow: hidden;
+}
+
+.squares li {
+width: 40px;
+height: 40px;
+background: rgba(255, 255, 255, 0.15);
+display: block;
+position: absolute;
+bottom: -40px;
+animation: up 2s infinite alternate;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+  50% {
+    opacity: 1;
+}
+
+  to {
+
+    transform: translateY(-900px) rotate(960deg);
+}
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+      padding: 0 1.6rem;
+      padding-right: .1rem;
+    }
+    #social-links{
+      display: inline-flex;
+    }
+} 
+
+@media screen and (max-width: 1080px) {
+  .content {
+      padding: 0 1.6rem;
+      padding-right: .1rem;
+    }
+    #social-links{
+      display: inline-flex;
+    }
+} 
+
